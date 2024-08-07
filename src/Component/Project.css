@@ -1,0 +1,64 @@
+/* Project.css */
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between cards */
+  justify-content: center; /* Center the cards horizontally */
+  padding: 16px;
+}
+
+.card {
+  position: relative; /* Required for positioning the overlay */
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Set the width of each card */
+  border: 1px solid #ddd; /* Optional border for cards */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowed content */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+  transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.card:hover {
+  transform: scale(1.03); /* Slightly enlarge card on hover */
+}
+
+.card-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  transition: opacity 0.3s ease; /* Smooth fade effect */
+}
+
+.card-content {
+  padding: 16px; /* Space inside the card */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: #fff;
+  opacity: 0; /* Hide content by default */
+  transition: opacity 0.3s ease; /* Smooth fade effect */
+  text-align: center;
+}
+
+.card:hover .card-content {
+  opacity: 1; /* Show content on hover */
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.card-name {
+  font-size: 1em;
+  margin-bottom: 16px;
+}
+
+.card-description p {
+  font-size: 0.875em;
+  line-height: 1.5;
+}

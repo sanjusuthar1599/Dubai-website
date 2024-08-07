@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 150px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  
+  .col-md-4,
+  .col-lg-3 {
+    padding: 15px;
+    flex: 1 1 21%; /* Adjust width for better responsiveness */
+    box-sizing: border-box;
+  }
+  
+  .home-service {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .home-service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home-service-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .home-service-title {
+    font-size: 1.25rem;
+    margin: 15px 15px 5px;
+    color: #2980b9;
+    text-align: center;
+  }
+  
+  .home-service-title a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .home-service-info {
+    padding: 0 15px 15px;
+    color: #7f8c8d;
+    text-align: center;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  .homeServices{
+    padding-top: 150px;
+  }
+  
+  .btn-primary {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1a5276;
+  }
+  
+  .btn-inverse {
+    background-color: #fff;
+    color: #2980b9;
+    border: 1px solid #2980b9;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4,
+    .col-lg-3 {
+      flex: 1 1 46%;
+    }
+  
+    .services-title {
+      font-size: 2rem;
+    }
+  
+    .home-service-title {
+      font-size: 1rem;
+    }
+  
+    .home-service-info {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .col-md-4,
+    .col-lg-3 {
+      flex: 1 1 100%;
+    }
+  }
+  
